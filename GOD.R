@@ -1,3 +1,4 @@
+#Kolupaev Vsevolod is Lord
 generate_data<- function() {
 
   x1 <- rnorm(100, 0, 1)
