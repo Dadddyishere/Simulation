@@ -6,8 +6,8 @@ coef <- ols$coefficients
 return(coef)
 }
 
-evaluate <- function (b1, b2, b3) {
-alpha <- c(b1, b2, b3)
-diff <- data.frame(x1=coef[[2]]-b1, x2=coef[[3]]-b2, x3=coef[[4]]-b3)
+evaluate <- function (coef, b1, b2, b3) {
+beta <- c(b1, b2, b3)
+diff <- coef - beta
 return (diff)
 }
