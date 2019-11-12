@@ -1,3 +1,5 @@
+#Bagautdinova is a researcher
+
 estimate <- function (data) {
 ols <- lm(y ~ x1 + x2 + x3, data = data)
 coef <- ols$coefficients
