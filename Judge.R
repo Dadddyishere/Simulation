@@ -10,6 +10,6 @@ iteration <- function(a1, a2, a3) {
 
 simulation <- function(n, a1, a2, a3) {
   results <- pbsapply(1:n, function(x) {iteration(a1, a2, a3)})
-  colMeans(results)
+  rowMeans(results)
 }
 
