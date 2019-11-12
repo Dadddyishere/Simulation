@@ -3,7 +3,7 @@
 library("pbapply")
 
 iteration <- function(a1, a2, a3) {
-  data <- generate_data(100)
+  data <- generate_data(100, a1, a2, a3)
   est <- estimate(data)
   return(evaluate(est, a1, a2, a3))
 }
